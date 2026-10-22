@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="BhaktGeet is a personal Google Drive to YouTube publishing tool for the owner of Sacred Echoes Bhakti.">
+  <title>BhaktGeet | Personal publishing tool</title>
+  <style>
+    :root{color-scheme:light;font-family:system-ui,sans-serif;color:#24322d;background:#f6f8f4}body{margin:0}main{max-width:760px;margin:auto;padding:48px 24px 64px}nav,footer{display:flex;gap:20px;flex-wrap:wrap}nav{margin-bottom:52px}a{color:#226447;text-underline-offset:3px}h1{font-size:clamp(2rem,6vw,3.1rem);line-height:1.12;letter-spacing:-.04em;margin:12px 0 24px}h2{font-size:1.2rem;margin-top:32px}p,li{font-size:1.03rem;line-height:1.7}small{color:#58675f}.label{font-weight:650;color:#477057;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}.card{background:white;border:1px solid #dce5dc;border-radius:16px;padding:12px 24px;margin:32px 0}footer{border-top:1px solid #dce5dc;padding-top:24px;margin-top:44px;font-size:.9rem}a:focus-visible{outline:3px solid #e0a94a;outline-offset:4px}
+  </style>
+</head>
+<body>
+<main>
+  <nav aria-label="Main navigation"><strong>BhaktGeet</strong><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+  <p class="label">Personal publishing automation</p>
+  <h1>From reviewed video to a scheduled release.</h1>
+  <p>BhaktGeet is a private tool used by the owner of Sacred Echoes Bhakti to publish the owner's reviewed devotional videos from Google Drive to the owner's designated YouTube channel.</p>
+  <p>This website provides public information about that tool. It does not accept uploads, connect visitors' Google accounts, or offer a public publishing service.</p>
+  <section class="card" aria-labelledby="workflow">
+    <h2 id="workflow">What the tool does</h2>
+    <ol>
+      <li>Reads a designated queue and final video files from the owner's Google Drive using read-only access.</li>
+      <li>Checks release metadata, file hashes, review evidence, and the intended channel.</li>
+      <li>Uploads an approved video privately to YouTube with an explicit future publication time, then records its status to help prevent duplicate uploads.</li>
+    </ol>
+  </section>
+  <h2>Separate permissions, one owner</h2>
+  <p>The Google-hosted worker runs with the owner's Drive access and permission to make API requests and manage its scheduled trigger. A separately authorized YouTube-only offline credential allows uploads and read-only channel/video checks. Access is limited by the owner's consent and can be revoked.</p>
+  <p>The tool does not create new audio or decide whether a recording is licensed. The owner reviews the final video and remains responsible for rights, metadata, audience settings, and publication choices.</p>
+  <h2>Privacy and owner contact</h2>
+  <p>Read the <a href="privacy.html">privacy policy</a> for data access, storage, transfers, and revocation, and the <a href="terms.html">terms of use</a> for the tool's scope and limitations.</p>
+  <p>Owner contact: <a href="https://www.youtube.com/@SacredEchoesA">Sacred Echoes Bhakti on YouTube</a>.</p>
+  <footer><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a><small>Independent personal tool. No Google certification or endorsement is claimed.</small></footer>
+</main>
+</body>
+</html>
